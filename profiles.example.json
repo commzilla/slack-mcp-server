@@ -1,0 +1,22 @@
+{
+  "profiles": [
+    {
+      "id": "my-workspace",
+      "display_name": "Angelo (Main Workspace)",
+      "user_token": "xoxp-your-user-oauth-token",
+      "bot_token": "xoxb-your-bot-oauth-token",
+      "app_token": "xapp-your-app-level-token",
+      "user_id": "U0123456789",
+      "is_primary": true
+    },
+    {
+      "id": "client-workspace",
+      "display_name": "Angelo (Client Workspace)",
+      "user_token": "xoxp-client-user-oauth-token",
+      "bot_token": "xoxb-client-bot-oauth-token",
+      "app_token": "xapp-client-app-level-token",
+      "user_id": "U9876543210",
+      "is_primary": false
+    }
+  ]
+}

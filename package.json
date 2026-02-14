@@ -1,0 +1,28 @@
+{
+  "name": "slack-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Slack multi-profile messaging with style learning",
+  "type": "module",
+  "bin": {
+    "slack-mcp-server": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node build/index.js",
+    "daemon": "node build/daemon.js",
+    "daemon:pm2": "pm2 start ecosystem.config.cjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "@slack/socket-mode": "^2.0.3",
+    "@slack/web-api": "^7.8.0",
+    "better-sqlite3": "^11.7.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}

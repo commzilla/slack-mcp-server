@@ -1,0 +1,9 @@
+node_modules/
+build/
+data/
+logs/
+profiles.json
+.env
+*.db
+*.db-wal
+*.db-shm
